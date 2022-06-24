@@ -72,7 +72,7 @@ img {
 
 .borders-header {
   border-bottom: 1px solid #ececec;
-  padding: 32px 0;
+  padding: 0;
 }
 .header {
   display: flex;
@@ -108,6 +108,7 @@ img {
 }
 
 .navigation-link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -162,21 +163,20 @@ img {
 /*hero section*/
 .hero-background {
   background-color: var(--footer-color);
-  padding: 0;
-}
-.hero-content {
   text-align: center;
-  padding: 200px;
+  padding: 200px 0;
 }
+
 .hero-text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--hero-color);
 
-  margin: 0px;
+  color: var(--hero-color);
+  text-align: center;
+  margin: 0px 250px;
 }
 .head-button {
   color: #ffffff;
@@ -206,7 +206,6 @@ img {
   justify-content: space-between;
 }
 .about-li {
-  margin-right: 15px;
   width: 270px;
 }
 .about-h3 {
@@ -245,22 +244,21 @@ img {
 }
 
 .team-info {
-  margin-top: 50px;
-  margin-bottom: 0px;
-}
-.team-info {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .photo-info {
   border-radius: 0 0 4px 4px;
-  width: 270px;
-  min-height: 368px;
+
   box-shadow: 0px 2px 1px #757575;
+  background-color: var(--hero-color);
+}
+.teammate-card-bottom {
+  padding: 30px 60px;
 }
 .teammate {
   margin: 0px;
-  margin-top: 30px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
@@ -270,7 +268,6 @@ img {
 
   margin: 0px;
   margin-top: 10px;
-  margin-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.18;
@@ -284,17 +281,20 @@ img {
   display: flex;
   justify-content: center;
 }
+.filter-list {
+  margin-right: 8px;
+}
 .filter-button {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+
   color: var(--main-text-color);
   border: var(--main-color);
 
   border-radius: 4px;
   padding: 6px 22px;
-  margin-right: 8px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -359,19 +359,22 @@ img {
 .contacts-footer {
   margin-top: 20px;
 }
+.cont-adress-li {
+  margin-top: 20px;
+}
 .cont-link-adress {
   margin: 0;
   font-style: normal;
   line-height: 1.71;
   color: #ffffff;
-
-  margin-top: 20px;
 }
 
+.cont-link-li {
+  margin-top: 9px;
+}
 .cont-link {
   font-style: normal;
   line-height: 1.71;
   color: var(--footer-mail-tel-color);
   display: inline-block;
-  margin-top: 9px;
 }
